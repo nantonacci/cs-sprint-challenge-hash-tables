@@ -23,11 +23,24 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+Hashing functions are deterministic - the same input returns the same output
+Different input data should return different numbers
+Should return numbers within a specific range
+
 2. Collision resolution
+Implementing chaining with a linked list can help mitigate collisions. That way each slot within the hash table can reference a collection or chain of items. Multiple different items can be stored at the same indices
+
 3. Performance of basic hash table operations
+Hash tables should average out to be O(1), constant time
+
 4. Load factor
+Load factor represents the used capacity of a hash table. This should sit between 0.2 and 0.7 for optimal memory usage and performance.
+
 5. Automatic resizing
+Tables should automatically resize if they are outside of load factor limits. If above 0.7, then it should be doubled, if below 0.2, it should be halved.
+
 6. Various use cases for hash tables
+Hash tables can be used for lookups (one data item linked to other data items such as a student ID to other student info), duplicate prevention (such as limited votes to one per person), and caching (improving server performance by preventing unnecessary recomputation of data)
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -46,14 +59,14 @@ We expect you to be able to answer questions in these areas. Your responses cont
 
 Your finished project must include all of the following requirements:
 
-- [ ] Solve any three of the five problems
+- [x] Solve any three of the five problems
 
 For each problem that you choose to solve, complete the following:
 
-- [ ] Navigate into each exercise's directory
-- [ ] Read the instructions for the exercise in the README
-- [ ] Implement your solution in the `.py` skeleton file
-- [ ] Make sure your code passes the tests running the test script with make tests
+- [x] Navigate into each exercise's directory
+- [x] Read the instructions for the exercise in the README
+- [x] Implement your solution in the `.py` skeleton file
+- [x] Make sure your code passes the tests running the test script with make tests
 
 *Note: For these exercises, we expect you to use Python's built-in `dict` as a hashtable. That said, if you wish, you can attempt to solve using your own hashtable implementation, as well. All solutions should utilize a `dict` or hashtable. You should not use Sets. (Though you can make a `dict` behave like a set if you wish.)*
 
